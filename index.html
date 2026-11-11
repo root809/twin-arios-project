@@ -69,7 +69,7 @@ footer{padding:30px 0 120px;color:var(--mut);font-size:.9rem;border-top:1px soli
 .slider{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--hl)}
 .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .track::-webkit-scrollbar{display:none}
-.track img{flex:0 0 100%;width:100%;height:340px;object-fit:cover;scroll-snap-align:center}
+.track img{flex:0 0 100%;width:100%;aspect-ratio:1/1;height:auto;object-fit:cover;scroll-snap-align:center}
 .sl-btn{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:0;background:rgba(0,0,0,.45);color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}
 .sl-btn.prev{left:8px}
 .sl-btn.next{right:8px}
@@ -77,7 +77,6 @@ footer{padding:30px 0 120px;color:var(--mut);font-size:.9rem;border-top:1px soli
 .dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;pointer-events:none}
 .dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.5)}
 .dots i.on{background:#fff}
-@media(max-width:650px){.track img{height:260px}}
 </style>
 </head>
 
@@ -111,7 +110,7 @@ footer{padding:30px 0 120px;color:var(--mut);font-size:.9rem;border-top:1px soli
 "gallery":[
 "https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/4.png?token=GHSAT0AAAAAAEPYYLGBOPZN4PK66O6FA5FI2XUJOSA",
 "https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/3.png?token=GHSAT0AAAAAAEPYYLGAR3FCK52FVZON5SEQ2XUJOGQ",
-"https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/2.png?token=GHSAT0AAAAAAEPYYLGBI2VFFT6EHVEPSNXS2XUJSIA"
+"https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/2.png"
 ]
 }
 </script>
@@ -277,7 +276,6 @@ link("",mapLink(),"Lihat di Google Maps")
 );
 
 tx.appendChild(b);
-
 hl.appendChild(tx);
 
 const sl=slider();
@@ -431,7 +429,6 @@ editing=true;
 msg="";
 render();
 },"btn"));
-
 }else{
 bar.append(
 btn("Simpan & publikasikan",save,"btn on"),
