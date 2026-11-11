@@ -1,15 +1,36 @@
+
 <!doctype html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Twin Arios Rumah Jahit</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Twin Arios Rumah Jahit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style id="st">
 :root{--bg:#4A101F;--ink:#FFF8F0;--mut:#E5C9CE;--card:#641A2C;--line:#895060;--tape:#C7A36A;--wa:#168A4A;--on-wa:#fff;--hl:#5A1728;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
 h1,h2{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.15;margin:0}
 .tape{height:30px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 80px),repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 8px) bottom/100% 45% no-repeat,var(--tape)}
 .wrap{max-width:860px;margin:0 auto;padding:0 20px}
-.hero{padding:44px 0 36px}.hero-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.hero-gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero-gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}.hero-gallery img:first-child{height:250px;grid-row:span 2}.photo-placeholder{min-height:120px;border:1px dashed var(--mut);border-radius:12px;display:grid;place-items:center;text-align:center;padding:12px;color:var(--mut);background:var(--hl);font-size:.9rem}.card-link{text-decoration:none;display:block}.card-link .card{height:100%;transition:transform .18s ease}.card-link:hover .card{transform:translateY(-3px)}@media(max-width:650px){.hero-layout{grid-template-columns:1fr}.hero-gallery img{height:140px}.hero-gallery img:first-child{height:190px}}
+.hero{padding:44px 0 36px}
+.hero-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.hero-gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hero-gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+.hero-gallery img:first-child{height:250px;grid-row:span 2}
+.photo-placeholder{min-height:120px;border:1px dashed var(--mut);border-radius:12px;display:grid;place-items:center;text-align:center;padding:12px;color:var(--mut);background:var(--hl);font-size:.9rem}
+.card-link{text-decoration:none;display:block}
+.card-link .card{height:100%;transition:transform .18s ease}
+.card-link:hover .card{transform:translateY(-3px)}
+@media(max-width:650px){
+.hero-layout{grid-template-columns:1fr}
+.hero-gallery img{height:140px}
+.hero-gallery img:first-child{height:190px}
+}
 .hero h1{font-size:clamp(2.3rem,8vw,4rem);max-width:12ch}
 .hero p{font-size:1.15rem;color:var(--mut);max-width:34em;margin:14px 0 24px;white-space:pre-line}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
@@ -20,17 +41,24 @@ section{padding:34px 0;border-top:1px solid var(--line)}
 section h2{font-size:1.7rem;margin-bottom:16px}
 .desc{white-space:pre-line;max-width:38em}
 .row{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px dashed var(--line);align-items:baseline}
-.row .n{font-weight:600}.row .s{color:var(--mut);font-size:.92rem;grid-column:1}.row .p{font-weight:700;grid-row:1;grid-column:2;text-align:right}
+.row .n{font-weight:600}
+.row .s{color:var(--mut);font-size:.92rem;grid-column:1}
+.row .p{font-weight:700;grid-row:1;grid-column:2;text-align:right}
 .row .x{grid-column:2;justify-self:end}
 .tg{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;position:relative}
-.card-link .card{color:var(--ink)}.card q{display:block;quotes:"“" "”";margin-bottom:10px}.card b{color:var(--mut);font-weight:600;font-size:.95rem}
-dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}dt{color:var(--mut)}dd{margin:0;white-space:pre-line}
+.card-link .card{color:var(--ink)}
+.card q{display:block;quotes:"“" "”";margin-bottom:10px}
+.card b{color:var(--mut);font-weight:600;font-size:.95rem}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+dt{color:var(--mut)}
+dd{margin:0;white-space:pre-line}
 a{color:inherit}
 footer{padding:30px 0 120px;color:var(--mut);font-size:.9rem;border-top:1px solid var(--line)}
 .fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;box-shadow:0 4px 16px rgba(0,0,0,.25)}
 .bar{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:6;display:flex;gap:8px;flex-wrap:wrap;max-width:calc(100% - 190px)}
-.bar .btn{background:var(--card);padding:10px 14px}.bar .btn.on{background:var(--tape);border-color:var(--ink);color:#1B2540}
+.bar .btn{background:var(--card);padding:10px 14px}
+.bar .btn.on{background:var(--tape);border-color:var(--ink);color:#1B2540}
 .ed{outline:1.5px dashed var(--mut);outline-offset:3px;border-radius:3px;min-height:1.2em;cursor:text}
 .ed:empty::before{content:attr(data-ph);color:var(--mut)}
 .mini{font:600 .85rem Figtree,sans-serif;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer;margin-top:8px}
@@ -43,89 +71,421 @@ footer{padding:30px 0 120px;color:var(--mut);font-size:.9rem;border-top:1px soli
 .track::-webkit-scrollbar{display:none}
 .track img{flex:0 0 100%;width:100%;height:340px;object-fit:cover;scroll-snap-align:center}
 .sl-btn{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:0;background:rgba(0,0,0,.45);color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}
-.sl-btn.prev{left:8px}.sl-btn.next{right:8px}
+.sl-btn.prev{left:8px}
+.sl-btn.next{right:8px}
 .sl-btn:focus-visible{outline:3px solid var(--tape)}
 .dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;pointer-events:none}
 .dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.5)}
 .dots i.on{background:#fff}
 @media(max-width:650px){.track img{height:260px}}
-</style></head><body><div id="app"></div>
-<script id="data" type="application/json">{"name":"Twin Arios Rumah Jahit","tagline":"Berpengalaman lebih dari 10 tahun menjahit kebaya custom dengan hasil rapi, potongan fit di badan, dan harga bersaing.","desc":"Twin Arios Rumah Jahit merupakan jasa jahit kebaya dan pakaian custom dengan pengalaman lebih dari 10 tahun. Kami mengutamakan kerapian, ketelitian, dan kenyamanan agar setiap pakaian memiliki potongan yang pas di badan. Kami siap membantu mewujudkan kebaya sesuai desain dan keinginan Anda. Hubungi kami melalui WhatsApp untuk informasi lebih lanjut.","wa":"628131392905","waText":"Halo Twin Arios Rumah Jahit, saya mau tanya soal jahitan.","alamat":"Perumahan Jl. Pesona Vista No.1 Blok B2, RT.002/RW.012, Dayeuh, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820","jam":"Senin–Sabtu, 09.00–17.00","email":"","ig":"","maps":"https://share.google/OjMe9P8sVr6AqlPti","prices":[{"item":"Kebaya Modern & Tradisional","note":"","price":"Rp250.000"},{"item":"Sarung Kebaya","note":"","price":"Rp80.000"},{"item":"Dress/Gamis/Terusan","note":"","price":"Rp200.000"},{"item":"Dress Anak","note":"","price":"Rp150.000"},{"item":"Atasan Pria","note":"","price":"Rp200.000"},{"item":"Kebaya Pengantin","note":"","price":"Hubungi lebih lanjut di WhatsApp"}],"testi":[{"name":"Fitra, Dress Bridesmaid","text":"Jahitannya bagus, rapi, dan pengerjaan detail sampe fit di badan"},{"name":"Elenchia Siallagan, Kebaya","text":"Bagus dan rapi banget jahitannya"}],"gallery":["data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23895060'/%3E%3Ctext x='400' y='315' font-size='48' fill='%23FFF8F0' text-anchor='middle' font-family='Georgia,serif'%3EFoto contoh 1%3C/text%3E%3C/svg%3E","data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23C7A36A'/%3E%3Ctext x='400' y='315' font-size='48' fill='%234A101F' text-anchor='middle' font-family='Georgia,serif'%3EFoto contoh 2%3C/text%3E%3C/svg%3E","data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%237A2A3E'/%3E%3Ctext x='400' y='315' font-size='48' fill='%23FFF8F0' text-anchor='middle' font-family='Georgia,serif'%3EFoto contoh 3%3C/text%3E%3C/svg%3E","data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23E5C9CE'/%3E%3Ctext x='400' y='315' font-size='48' fill='%234A101F' text-anchor='middle' font-family='Georgia,serif'%3EFoto contoh 4%3C/text%3E%3C/svg%3E"]}</script>
+</style>
+</head>
+
+<body>
+<div id="app"></div>
+
+<script id="data" type="application/json">
+{
+"name":"Twin Arios Rumah Jahit",
+"tagline":"Berpengalaman lebih dari 10 tahun menjahit kebaya custom dengan hasil rapi, potongan fit di badan, dan harga bersaing.",
+"desc":"Twin Arios Rumah Jahit merupakan jasa jahit kebaya dan pakaian custom dengan pengalaman lebih dari 10 tahun. Kami mengutamakan kerapian, ketelitian, dan kenyamanan agar setiap pakaian memiliki potongan yang pas di badan. Kami siap membantu mewujudkan kebaya sesuai desain dan keinginan Anda. Hubungi kami melalui WhatsApp untuk informasi lebih lanjut.",
+"wa":"628131392905",
+"waText":"Halo Twin Arios Rumah Jahit, saya mau tanya soal jahitan.",
+"alamat":"Perumahan Jl. Pesona Vista No.1 Blok B2, RT.002/RW.012, Dayeuh, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820",
+"jam":"Senin–Sabtu, 09.00–17.00",
+"email":"",
+"ig":"",
+"maps":"https://share.google/OjMe9P8sVr6AqlPti",
+"prices":[
+{"item":"Kebaya Modern & Tradisional","note":"","price":"Rp250.000"},
+{"item":"Sarung Kebaya","note":"","price":"Rp80.000"},
+{"item":"Dress/Gamis/Terusan","note":"","price":"Rp200.000"},
+{"item":"Dress Anak","note":"","price":"Rp150.000"},
+{"item":"Atasan Pria","note":"","price":"Rp200.000"},
+{"item":"Kebaya Pengantin","note":"","price":"Hubungi lebih lanjut di WhatsApp"}
+],
+"testi":[
+{"name":"Fitra, Dress Bridesmaid","text":"Jahitannya bagus, rapi, dan pengerjaan detail sampe fit di badan"},
+{"name":"Elenchia Siallagan, Kebaya","text":"Bagus dan rapi banget jahitannya"}
+],
+"gallery":[
+"https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/4.png?token=GHSAT0AAAAAAEPYYLGBOPZN4PK66O6FA5FI2XUJOSA",
+"https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/3.png?token=GHSAT0AAAAAAEPYYLGAR3FCK52FVZON5SEQ2XUJOGQ",
+"https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/2.png"
+]
+}
+</script>
+
 <script id="js">
 const FONT="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700&display=swap";
-let DATA=JSON.parse(document.getElementById("data").textContent),SNAP=JSON.stringify(DATA),editing=false,canEdit=false,msg="";
+
+let DATA=JSON.parse(document.getElementById("data").textContent),
+SNAP=JSON.stringify(DATA),
+editing=false,
+canEdit=false,
+msg="";
+
 const app=document.getElementById("app");
-const $=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+
+const $=(t,c,x)=>{
+const e=document.createElement(t);
+if(c)e.className=c;
+if(x!=null)e.textContent=x;
+return e;
+};
+
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
-function ed(tag,cls,o,k,ph){const e=$(tag,cls,o[k]);if(editing){try{e.contentEditable="plaintext-only"}catch(x){}if(e.contentEditable!=="plaintext-only")e.contentEditable="true";e.dataset.ph=ph;e.classList.add("ed");e.oninput=()=>{o[k]=e.textContent}}return e}
-function waLink(){let d=String(DATA.wa||"").replace(/\D/g,"");if(d.startsWith("0"))d="62"+d.slice(1);return"https://wa.me/"+d+"?text="+encodeURIComponent(DATA.waText||"")}
-function mapLink(){const m=String(DATA.maps||"").trim();return/^https?:\/\//i.test(m)?m:"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(DATA.alamat||DATA.name)}
-function link(cls,href,txt){const a=$("a","btn "+cls,txt);a.href=href;a.target="_blank";a.rel="noopener";return a}
-function btn(txt,fn,cls){const b=$("button",cls||"mini",txt);b.type="button";b.onclick=fn;return b}
-function sec(id,title){const s=$("section");s.id=id;s.appendChild($("h2",null,title));return s}
+
+function ed(tag,cls,o,k,ph){
+const e=$(tag,cls,o[k]);
+if(editing){
+try{e.contentEditable="plaintext-only"}catch(x){}
+if(e.contentEditable!=="plaintext-only")e.contentEditable="true";
+e.dataset.ph=ph;
+e.classList.add("ed");
+e.oninput=()=>{o[k]=e.textContent};
+}
+return e;
+}
+
+function waLink(){
+let d=String(DATA.wa||"").replace(/\D/g,"");
+if(d.startsWith("0"))d="62"+d.slice(1);
+return"https://wa.me/"+d+"?text="+encodeURIComponent(DATA.waText||"");
+}
+
+function mapLink(){
+const m=String(DATA.maps||"").trim();
+return/^https?:\/\//i.test(m)?m:"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(DATA.alamat||DATA.name);
+}
+
+function link(cls,href,txt){
+const a=$("a","btn "+cls,txt);
+a.href=href;
+a.target="_blank";
+a.rel="noopener";
+return a;
+}
+
+function btn(txt,fn,cls){
+const b=$("button",cls||"mini",txt);
+b.type="button";
+b.onclick=fn;
+return b;
+}
+
+function sec(id,title){
+const s=$("section");
+s.id=id;
+s.appendChild($("h2",null,title));
+return s;
+}
+
 function slider(){
- const imgs=(DATA.gallery||[]).filter(Boolean);
- if(!imgs.length)return null;
- const box=$("div","slider"),tr=$("div","track"),dots=$("div","dots");
- imgs.forEach((src,i)=>{const im=$("img");im.src=src;im.alt=DATA.name+" – foto "+(i+1);im.loading=i?"lazy":"eager";tr.appendChild(im);dots.appendChild($("i"))});
- let cur=0,t;
- const mark=()=>[...dots.children].forEach((d,i)=>d.classList.toggle("on",i===cur));
- const go=i=>{cur=(i+imgs.length)%imgs.length;tr.scrollTo({left:cur*tr.clientWidth,behavior:"smooth"});mark()};
- tr.onscroll=()=>{cur=Math.round(tr.scrollLeft/tr.clientWidth);mark()};
- mark();box.appendChild(tr);
- if(imgs.length>1){
-  const p=$("button","sl-btn prev","‹"),n=$("button","sl-btn next","›");
-  p.type=n.type="button";p.setAttribute("aria-label","Foto sebelumnya");n.setAttribute("aria-label","Foto berikutnya");
-  p.onclick=()=>go(cur-1);n.onclick=()=>go(cur+1);
-  box.append(p,n,dots);
-  const stop=()=>clearInterval(t);
-  const start=()=>{stop();if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;t=setInterval(()=>{if(!box.isConnected)return stop();go(cur+1)},4000)};
-  box.addEventListener("pointerdown",stop);box.addEventListener("mouseenter",stop);box.addEventListener("mouseleave",start);
-  start();
- }
- return box;
+const imgs=(DATA.gallery||[]).filter(Boolean);
+if(!imgs.length)return null;
+
+const box=$("div","slider"),
+tr=$("div","track"),
+dots=$("div","dots");
+
+imgs.forEach((src,i)=>{
+const im=$("img");
+im.src=src;
+im.alt=DATA.name+" – foto "+(i+1);
+im.loading=i?"lazy":"eager";
+im.onerror=()=>{im.alt="Gambar "+(i+1)+" tidak dapat dimuat";};
+tr.appendChild(im);
+dots.appendChild($("i"));
+});
+
+let cur=0,t;
+
+const mark=()=>{
+[...dots.children].forEach((d,i)=>d.classList.toggle("on",i===cur));
+};
+
+const go=i=>{
+cur=(i+imgs.length)%imgs.length;
+tr.scrollTo({left:cur*tr.clientWidth,behavior:"smooth"});
+mark();
+};
+
+tr.onscroll=()=>{
+cur=Math.round(tr.scrollLeft/tr.clientWidth);
+mark();
+};
+
+mark();
+box.appendChild(tr);
+
+if(imgs.length>1){
+const p=$("button","sl-btn prev","‹"),
+n=$("button","sl-btn next","›");
+
+p.type=n.type="button";
+p.setAttribute("aria-label","Foto sebelumnya");
+n.setAttribute("aria-label","Foto berikutnya");
+
+p.onclick=()=>go(cur-1);
+n.onclick=()=>go(cur+1);
+
+box.append(p,n,dots);
+
+const stop=()=>clearInterval(t);
+
+const start=()=>{
+stop();
+if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+t=setInterval(()=>{
+if(!box.isConnected)return stop();
+go(cur+1);
+},4000);
+};
+
+box.addEventListener("pointerdown",stop);
+box.addEventListener("mouseenter",stop);
+box.addEventListener("mouseleave",start);
+start();
 }
+
+return box;
+}
+
 function render(){
- app.textContent="";document.title=DATA.name;
- app.appendChild($("div","tape"));
- const w=$("div","wrap");app.appendChild(w);
- const h=$("div","hero"),hl=$("div","hero-layout"),tx=$("div");
- tx.append(ed("h1","",DATA,"name","Nama usaha"),ed("p","",DATA,"tagline","Kalimat pembuka"));
- const b=$("div","btns");b.append(link("wa",waLink(),"Chat WhatsApp"),link("",mapLink(),"Lihat di Google Maps"));tx.appendChild(b);
- hl.appendChild(tx);const sl=slider();if(sl)hl.appendChild(sl);
- h.appendChild(hl);w.appendChild(h);
- let s=sec("tentang","Tentang kami");s.appendChild(ed("p","desc",DATA,"desc","Deskripsi usaha"));w.appendChild(s);
- s=sec("harga","Daftar harga");
- DATA.prices.forEach((p,i)=>{const r=$("div","row");r.append(ed("div","n",p,"item","Nama layanan"),ed("div","p",p,"price","Harga"));
-  if(editing){r.append(ed("div","s",p,"note","Catatan (opsional)"),btn("Hapus",()=>{DATA.prices.splice(i,1);render()},"mini x"))}else if(p.note)r.appendChild($("div","s",p.note));
-  s.appendChild(r)});
- if(editing)s.appendChild(btn("+ Tambah layanan",()=>{DATA.prices.push({item:"",note:"",price:""});render()}));
- w.appendChild(s);
- s=sec("testimoni","Kata pelanggan");const g=$("div","tg");
- DATA.testi.forEach((t,i)=>{const c=$("div","card");c.append(ed("q","",t,"text","Isi testimoni"),ed("b","",t,"name","Nama pelanggan"));
-  if(editing)c.appendChild(btn("Hapus",()=>{DATA.testi.splice(i,1);render()}));g.appendChild(c)});
- s.appendChild(g);if(editing)s.appendChild(btn("+ Tambah testimoni",()=>{DATA.testi.push({name:"",text:""});render()}));w.appendChild(s);
- s=sec("kontak","Kontak & lokasi");
- if(editing){const f=$("div","set");[["wa","Nomor WhatsApp (contoh 6281234567890)"],["waText","Pesan otomatis saat tombol WA diklik"],["alamat","Alamat"],["jam","Jam buka"],["email","Email (opsional)"],["ig","Instagram (opsional)"],["maps","Link Google Maps (tempel dari tombol Bagikan di Google Maps)"]].forEach(([k,l])=>{const lb=$("label",null,l),i=$("input");i.value=DATA[k]||"";i.oninput=()=>{DATA[k]=i.value};lb.appendChild(i);f.appendChild(lb)});s.appendChild(f)}
- else{const d=$("dl");[["WhatsApp","wa"],["Alamat","alamat"],["Jam buka","jam"],["Email","email"],["Instagram","ig"]].forEach(([l,k])=>{if(DATA[k]){d.append($("dt",null,l),$("dd",null,k==="wa"?"+"+String(DATA.wa).replace(/\D/g,""):DATA[k]))}});s.appendChild(d);
-  const bb=$("div","btns");bb.style.marginTop="18px";bb.append(link("wa",waLink(),"Chat WhatsApp"),link("",mapLink(),"Buka di Google Maps"));s.appendChild(bb)}
- w.appendChild(s);
- const ft=$("footer");ft.appendChild($("div","wrap","© "+new Date().getFullYear()+" "+DATA.name));app.appendChild(ft);
- if(!editing)app.appendChild(link("wa fab",waLink(),"WhatsApp"));
- if(canEdit){const bar=$("div","bar");
-  if(!editing)bar.appendChild(btn("Edit halaman",()=>{editing=true;msg="";render()},"btn"));
-  else{bar.append(btn("Simpan & publikasikan",save,"btn on"),btn("Batal",()=>{DATA=JSON.parse(SNAP);editing=false;render()},"btn"));if(msg)bar.appendChild($("p","msg",msg))}
-  app.appendChild(bar)}
-}
-function buildDoc(){
- const css=document.getElementById("st").textContent,js=document.getElementById("js").textContent,data=JSON.stringify(DATA).replace(/</g,"\\u003c");
- return'<!doctype html>\n<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>'+esc(DATA.name)+'</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="'+FONT+'" rel="stylesheet"><style id="st">'+css+'</style></head><body><div id="app"></div><script id="data" type="application/json">'+data+'<\/script><script id="js">'+js+'<\/script></body></html>';
-}
-async function save(){
- try{msg="Menyimpan…";render();const a=await claude.use("artifact");if(!a)throw new Error("tidak tersedia");await a.publish(buildDoc())}
- catch(e){msg="Gagal menyimpan: "+((e&&(e.code||e.message))||"coba lagi");render()}
-}
+app.textContent="";
+document.title=DATA.name;
+
+app.appendChild($("div","tape"));
+
+const w=$("div","wrap");
+app.appendChild(w);
+
+const h=$("div","hero"),
+hl=$("div","hero-layout"),
+tx=$("div");
+
+tx.append(
+ed("h1","",DATA,"name","Nama usaha"),
+ed("p","",DATA,"tagline","Kalimat pembuka")
+);
+
+const b=$("div","btns");
+b.append(
+link("wa",waLink(),"Chat WhatsApp"),
+link("",mapLink(),"Lihat di Google Maps")
+);
+
+tx.appendChild(b);
+
+hl.appendChild(tx);
+
+const sl=slider();
+if(sl)hl.appendChild(sl);
+
+h.appendChild(hl);
+w.appendChild(h);
+
+let s=sec("tentang","Tentang kami");
+s.appendChild(ed("p","desc",DATA,"desc","Deskripsi usaha"));
+w.appendChild(s);
+
+s=sec("harga","Daftar harga");
+
+DATA.prices.forEach((p,i)=>{
+const r=$("div","row");
+
+r.append(
+ed("div","n",p,"item","Nama layanan"),
+ed("div","p",p,"price","Harga")
+);
+
+if(editing){
+r.append(
+ed("div","s",p,"note","Catatan (opsional)"),
+btn("Hapus",()=>{
+DATA.prices.splice(i,1);
 render();
-(async()=>{try{if(window.claude&&claude.use){const u=await claude.use("user");if(u&&u.canEdit()){canEdit=true;render()}}}catch(e){}})();
+},"mini x")
+);
+}else if(p.note){
+r.appendChild($("div","s",p.note));
+}
+
+s.appendChild(r);
+});
+
+if(editing){
+s.appendChild(btn("+ Tambah layanan",()=>{
+DATA.prices.push({item:"",note:"",price:""});
+render();
+}));
+}
+
+w.appendChild(s);
+
+s=sec("testimoni","Kata pelanggan");
+const g=$("div","tg");
+
+DATA.testi.forEach((t,i)=>{
+const c=$("div","card");
+
+c.append(
+ed("q","",t,"text","Isi testimoni"),
+ed("b","",t,"name","Nama pelanggan")
+);
+
+if(editing){
+c.appendChild(btn("Hapus",()=>{
+DATA.testi.splice(i,1);
+render();
+}));
+}
+
+g.appendChild(c);
+});
+
+s.appendChild(g);
+
+if(editing){
+s.appendChild(btn("+ Tambah testimoni",()=>{
+DATA.testi.push({name:"",text:""});
+render();
+}));
+}
+
+w.appendChild(s);
+
+s=sec("kontak","Kontak & lokasi");
+
+if(editing){
+const f=$("div","set");
+
+[
+["wa","Nomor WhatsApp (contoh 6281234567890)"],
+["waText","Pesan otomatis saat tombol WA diklik"],
+["alamat","Alamat"],
+["jam","Jam buka"],
+["email","Email (opsional)"],
+["ig","Instagram (opsional)"],
+["maps","Link Google Maps (tempel dari tombol Bagikan di Google Maps)"]
+].forEach(([k,l])=>{
+const lb=$("label",null,l),
+i=$("input");
+
+i.value=DATA[k]||"";
+i.oninput=()=>{DATA[k]=i.value};
+lb.appendChild(i);
+f.appendChild(lb);
+});
+
+s.appendChild(f);
+
+}else{
+const d=$("dl");
+
+[
+["WhatsApp","wa"],
+["Alamat","alamat"],
+["Jam buka","jam"],
+["Email","email"],
+["Instagram","ig"]
+].forEach(([l,k])=>{
+if(DATA[k]){
+d.append(
+$("dt",null,l),
+$("dd",null,k==="wa"?"+"+String(DATA.wa).replace(/\D/g,""):DATA[k])
+);
+}
+});
+
+s.appendChild(d);
+
+const bb=$("div","btns");
+bb.style.marginTop="18px";
+
+bb.append(
+link("wa",waLink(),"Chat WhatsApp"),
+link("",mapLink(),"Buka di Google Maps")
+);
+
+s.appendChild(bb);
+}
+
+w.appendChild(s);
+
+const ft=$("footer");
+ft.appendChild($("div","wrap","© "+new Date().getFullYear()+" "+DATA.name));
+app.appendChild(ft);
+
+if(!editing){
+app.appendChild(link("wa fab",waLink(),"WhatsApp"));
+}
+
+if(canEdit){
+const bar=$("div","bar");
+
+if(!editing){
+bar.appendChild(btn("Edit halaman",()=>{
+editing=true;
+msg="";
+render();
+},"btn"));
+
+}else{
+bar.append(
+btn("Simpan & publikasikan",save,"btn on"),
+btn("Batal",()=>{
+DATA=JSON.parse(SNAP);
+editing=false;
+render();
+},"btn")
+);
+
+if(msg)bar.appendChild($("p","msg",msg));
+}
+
+app.appendChild(bar);
+}
+}
+
+function buildDoc(){
+const css=document.getElementById("st").textContent,
+js=document.getElementById("js").textContent,
+data=JSON.stringify(DATA).replace(/</g,"\\u003c");
+
+return'<!doctype html>\n<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>'+esc(DATA.name)+'</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="'+FONT+'" rel="stylesheet"><style id="st">'+css+'</style></head><body><div id="app"></div><script id="data" type="application/json">'+data+'<\/script><script id="js">'+js+'<\/script></body></html>';
+}
+
+async function save(){
+try{
+msg="Menyimpan…";
+render();
+
+const a=await claude.use("artifact");
+if(!a)throw new Error("tidak tersedia");
+
+await a.publish(buildDoc());
+
+}catch(e){
+msg="Gagal menyimpan: "+((e&&(e.code||e.message))||"coba lagi");
+render();
+}
+}
+
+render();
+
+(async()=>{
+try{
+if(window.claude&&claude.use){
+const u=await claude.use("user");
+if(u&&u.canEdit()){
+canEdit=true;
+render();
+}
+}
+}catch(e){}
+})();
 </script>
-</body></html>
+</body>
+</html>
