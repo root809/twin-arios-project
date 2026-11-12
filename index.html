@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="id">
 <head>
@@ -15,7 +14,9 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
 h1,h2{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.15;margin:0}
-.tape{height:30px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 80px),repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 8px) bottom/100% 45% no-repeat,var(--tape)}
+.lace{display:flex;align-items:flex-start;height:clamp(44px,9vw,72px);overflow:hidden;pointer-events:none;user-select:none}
+.lace img{flex:0 0 auto;height:236.2%;width:auto;display:block}
+.lace img.flip{transform:scaleX(-1)}
 .wrap{max-width:860px;margin:0 auto;padding:0 20px}
 .hero{padding:44px 0 36px}
 .hero-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
@@ -251,11 +252,30 @@ start();
 return box;
 }
 
+const LACE="https://raw.githubusercontent.com/root809/twin-arios-project/refs/heads/main/renda%20website%20twin%20arios.png";
+
+function lace(){
+const box=$("div","lace");
+box.setAttribute("aria-hidden","true");
+
+for(let i=0;i<8;i++){
+const im=$("img",i%2?"flip":"");
+im.src=LACE;
+im.alt="";
+im.decoding="async";
+im.draggable=false;
+im.onerror=()=>{box.style.display="none"};
+box.appendChild(im);
+}
+
+return box;
+}
+
 function render(){
 app.textContent="";
 document.title=DATA.name;
 
-app.appendChild($("div","tape"));
+app.appendChild(lace());
 
 const w=$("div","wrap");
 app.appendChild(w);
